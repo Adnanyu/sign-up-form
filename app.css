@@ -1,0 +1,218 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+    font-family:'norsebold' ;
+    src: url(fonts/Norsebold.otf);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*here we goooo*/
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+section {
+   /* border: 4px solid lime;*/
+}
+main{
+    display: flex;
+    flex-grow: 1;
+}
+.inner-section{
+    display: block;
+   /* border: 4px solid orange;*/
+    padding: 40px;
+    min-height: 100px;
+    padding-left: 30px;
+}
+
+header, main, footer{
+   /* border: 4px solid red;*/
+}
+.section-1{
+    max-width: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://picsum.photos/1000);
+}
+.section-2:first-child{
+    padding-top: 0px;
+
+}
+input, label {
+    display:block;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+.sign-container{
+    display: flex;
+    padding: 5px;
+}
+.section-2{
+    background-color: rgb(249 250 251);
+}
+
+label{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    
+}
+input{
+    border: 1px solid #E5E7EB;;
+    border-radius: 4px;
+    height: 27px;
+    width: 230px;
+    padding: 0;
+}
+input:focus {
+    border-color: blue;
+    box-shadow: 10px  blue;
+}
+.create-button{
+    text-decoration: none;
+    border: 1px solid ;
+    color: white;
+    background-color:#596D48;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 13px;
+    
+}
+a{
+    text-decoration: none;
+    color: #596D48; 
+    font-weight: 600;
+}
+.p1{
+    padding-top: 40px;
+    
+}
+h1{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.inner-section:nth-of-type(1){
+    background-color: rgb(249 250 251);
+}
+.inner-section:nth-of-type(1){
+    background-color: white;
+}
+.inner-section:last-of-type{
+    background-color: rgb(249 250 251);
+}
+.intro{
+    display: block;
+    /*border: 4px solid orange;*/
+    padding: 60px;
+    min-height: 100px;
+    padding-left: 30px;
+    background-color: rgb(249 250 251);
+    font-size: 2em;
+}
+span{
+    color: red;
+    font-size: 12px;
+}
+.imgholder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+}
+img{
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+.transparent{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 120px;
+    margin-top: 5rem;
+}
+.imgholder span{
+    margin-left: 0.5rem;
+    font-family: "norsebold", sans-serif;
+    font-size: 5rem;
+    color: rgb(255 255 255);
+}
+.creadit{
+    display: block;
+    position: fixed;
+    bottom: 3.5%;
+    left: 12.5%;
+    color: rgb(255 255 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+.creadit a{
+    color: white;
+    text-decoration: underline;
+    font-weight: 300;
+}
+@media (max-width: 800px) {
+    .section-1{
+        display: none;
+    }
+    .intro{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+}
